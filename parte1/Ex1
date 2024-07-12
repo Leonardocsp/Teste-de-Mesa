@@ -1,0 +1,43 @@
+Using System;
+
+namespace TesteDeMesa
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            int a, b, c, i;
+
+            a = 10;
+
+            b = 20;
+
+            c = (a + b) / 2;
+           
+            c = c - 40;
+
+            int[] v = new int [5];
+
+
+             for(i = 0; i < 5; i++)
+            {
+                if (i == 3)
+                {
+                    v[i] = a + b + c;
+                    Console.WriteLine("Condição: Verdadeira");
+                    Console.WriteLine(v[i]);
+                }
+
+                else
+                {
+                    Console.WriteLine("Condição: Falsa");
+                    Console.WriteLine(v[i]);
+                }
+            }
+                
+            Console.ReadLine();
+        }
+
+    }
+}
