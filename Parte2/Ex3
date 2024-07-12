@@ -1,0 +1,30 @@
+using System;
+
+namespace TesteDeMesa
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            decimal valorPresente, taxa, valorFuturo, rendimento;
+            int ano;
+
+            Console.WriteLine("Digite o valor presente: ");
+            valorPresente = Convert.ToDecimal(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor da Taxa ao ano (%): ");
+            taxa = Convert.ToDecimal(Console.ReadLine()) / 100;
+
+            Console.WriteLine("Digite quantos anos: ");
+            ano = Convert.ToInt32(Console.ReadLine());
+
+            valorFuturo = valorPresente * (decimal)Math.Pow((double)(1 + taxa), ano);
+            rendimento = valorFuturo - valorPresente;
+
+            Console.WriteLine($"Valor Futuro: {valorFuturo:F2}");
+            Console.WriteLine($"Valor de Rendimento: {rendimento:F2}");
+
+            Console.ReadLine();
+        }
+    }
+}
