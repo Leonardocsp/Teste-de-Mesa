@@ -1,0 +1,31 @@
+using System;
+
+namespace TesteDeMesa
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a;
+            int[] v = new int[6]; // Cria um array de inteiros com tamanho 6
+
+            a = 2; // Inicializa 'a' com o valor 2
+
+            Console.WriteLine("Valor de a antes: {0}", a); // Imprime o valor inicial de 'a'
+
+            // Enquanto 'a' for menor que 6, executa o loop
+            while (a < 6)
+            {
+                v[a] = 10 * a; // Atribui o valor 10 vezes 'a' à posição 'a' do array 'v'
+                Console.WriteLine("v[{0}] = {1}", a, v[a]); // Imprime o valor de 'v[a]'
+
+                a += 1; // Incrementa 'a' em 1
+                Console.WriteLine("Valor de a na posição: {0}", a); // Imprime o novo valor de 'a'
+            }
+
+            Console.WriteLine("Valor de a final: {0}", a); // Imprime o valor final de 'a'
+
+            Console.ReadLine(); // Aguarda uma entrada do usuário para encerrar o programa
+        }
+    }
+}
