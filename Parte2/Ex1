@@ -1,0 +1,28 @@
+using System;
+
+namespace TesteDeMesa
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            decimal valorPresente, taxa, valorFuturo;
+
+            int mes, ano;
+            
+            valorPresente = 1000.00m;
+
+            taxa = 5.30m / 100;
+
+            mes = 12;
+
+            ano = 2;
+
+            valorFuturo = valorPresente * (decimal)Math.Pow((double)(1 + taxa), mes);
+
+            Console.WriteLine($"Valor Futuro: {valorFuturo:F2}");
+
+            Console.ReadLine(); 
+        }
+    }
+}
