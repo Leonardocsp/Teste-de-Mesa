@@ -1,0 +1,32 @@
+using System;
+
+namespace TesteDeMesa
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+
+            a = 7;
+
+            int[] v = new int[a];
+
+            b = a - 6;
+
+            Console.WriteLine("Valor de b antes: {0}", b);
+
+            while (b < a)
+            {
+                v[b] = b + a;
+
+                Console.WriteLine("v[{0}] = {1}", b, v[b]); 
+
+                b = b + 2;
+
+                Console.WriteLine("Valor de b na posição: {0}", b);
+            }
+            Console.ReadLine(); 
+        }
+    }
+}
