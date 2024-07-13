@@ -17,7 +17,7 @@ namespace TesteDeMesa
             Console.WriteLine($"Valor Presente: {valorFuturo:F2}");
             Console.WriteLine($"Valor Presente: {valorPresenteInvertido:F2}");
 
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
