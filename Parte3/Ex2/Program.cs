@@ -9,6 +9,7 @@ namespace Ex2
         {
             JurosComposto juros = new JurosComposto();
             juros.Juros();
+            Console.ReadKey();
         }
     }
 }
