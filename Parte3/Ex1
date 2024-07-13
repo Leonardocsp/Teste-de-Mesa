@@ -39,7 +39,7 @@ namespace TesteDeMesa
                 Console.WriteLine($"Valor Futuro: {valorFuturo3:F2}");
                 Console.WriteLine($"Valor de Rendimento: {rendimento3:F2}");
                         
-            Console.ReadLine();
+           Console.ReadKey();
         }
     }
 }
