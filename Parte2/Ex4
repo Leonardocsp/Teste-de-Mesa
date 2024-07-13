@@ -80,7 +80,7 @@ namespace TesteDeMesa
                 Console.WriteLine($"Saldo: {valorFuturo:F2}");
                 Console.WriteLine($"Valor de Rendimento: {rendimento:F2}");
             }
-                Console.ReadLine();
+                Console.ReadKey();
         }
     }
 }
