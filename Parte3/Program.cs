@@ -1,4 +1,4 @@
-﻿using Ex1;
+﻿using Ex2;
 using System;
 
 namespace Ex2
