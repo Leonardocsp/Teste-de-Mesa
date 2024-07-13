@@ -26,10 +26,10 @@ Ex4: Simula um investimento com possibilidade de resgate parcial após um perío
 
 Ex5: Calcula o valor presente invertido de um investimento com base em dados fornecidos.
 
-Como Usar
+Parte 3: Cálculos financeiros avançados e projeções com resgates parciais.
 
-Cada exercício está implementado como um programa C# separado. Para executar os programas:
+Ex1: Cálculo do valor futuro de três investimentos distintos com diferentes taxas de juros anuais.
 
-Certifique-se de ter o ambiente de desenvolvimento .NET instalado em seu sistema.
-Clone este repositório localmente.
-Abra o projeto no Visual Studio ou compile e execute os programas via linha de comando usando dotnet run.
+Ex2: Projeção de saldo e rendimento mensal de um investimento com possibilidade de resgate parcial após um período específico.
+
+Ex3: Mostra os calculos em formato de tabela.
