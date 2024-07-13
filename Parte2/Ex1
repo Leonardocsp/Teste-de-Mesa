@@ -22,7 +22,7 @@ namespace TesteDeMesa
 
             Console.WriteLine($"Valor Futuro: {valorFuturo:F2}");
 
-            Console.ReadLine(); 
+            Console.ReadKey();
         }
     }
 }
