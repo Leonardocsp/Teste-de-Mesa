@@ -12,32 +12,38 @@ namespace TesteDeMesa
             decimal valorPresente2 = 5500.00m;
             decimal valorPresente3 = 12000.00m;
 
-            double taxa1 = 3.00/100;
-            double taxa2 = 2.48/100;
-            double taxa3 = 2.00/100;
-            
-                        
-                valorFuturo1 = valorPresente1 * (decimal)Math.Pow(1 + taxa1, 8.33);
-                valorFuturo2 = valorPresente2 * (decimal)Math.Pow(1 + taxa2, 8.33);
-                valorFuturo3 = valorPresente3 * (decimal)Math.Pow(1 + taxa3, 8.33);
+            double taxa1 = 3.00 / 100;
+            double taxa2 = 2.48 / 100;
+            double taxa3 = 2.00 / 100;
 
-                rendimento1 = valorFuturo1 - valorPresente1;
-                rendimento2 = valorFuturo2 - valorPresente2;
-                rendimento3 = valorFuturo3 - valorPresente3;
 
-                Console.WriteLine($"Valor Presente 1: {valorPresente1:F2}");
-                Console.WriteLine($"Valor Futuro: {valorFuturo1:F2}");
-                Console.WriteLine($"Valor de Rendimento: {rendimento1:F2}");
+            valorFuturo1 = valorPresente1 * (decimal)Math.Pow(1 + taxa1, 8.33);
+            valorFuturo2 = valorPresente2 * (decimal)Math.Pow(1 + taxa2, 8.33);
+            valorFuturo3 = valorPresente3 * (decimal)Math.Pow(1 + taxa3, 8.33);
 
-                Console.WriteLine($"Valor Presente 2: {valorPresente2:F2}");
-                Console.WriteLine($"Valor Futuro: {valorFuturo2:F2}");
-                Console.WriteLine($"Valor de Rendimento: {rendimento2:F2}");
+            rendimento1 = valorFuturo1 - valorPresente1;
+            rendimento2 = valorFuturo2 - valorPresente2;
+            rendimento3 = valorFuturo3 - valorPresente3;
 
-                Console.WriteLine($"Valor Presente 3: {valorPresente3:F2}");
-                Console.WriteLine($"Valor Futuro: {valorFuturo3:F2}");
-                Console.WriteLine($"Valor de Rendimento: {rendimento3:F2}");
-                        
-           Console.ReadKey();
+            Console.WriteLine($"Valor Presente 1: {valorPresente1:F2}");
+            Console.WriteLine($"Valor da Taxa: {taxa1 * 100:F2}");
+            Console.WriteLine("Por 8 meses e 10 dias");
+            Console.WriteLine($"Valor Futuro: {valorFuturo1:F2}");
+            Console.WriteLine($"Valor de Rendimento: {rendimento1:F2}\n");
+
+            Console.WriteLine($"Valor Presente 2: {valorPresente2:F2}");
+            Console.WriteLine($"Valor da Taxa: {taxa2 * 100:F2}");
+            Console.WriteLine("Por 8 meses e 10 dias");
+            Console.WriteLine($"Valor Futuro: {valorFuturo2:F2}");
+            Console.WriteLine($"Valor de Rendimento: {rendimento2:F2}\n");
+
+            Console.WriteLine($"Valor Presente 3: {valorPresente3:F2}");
+            Console.WriteLine($"Valor da Taxa: {taxa3 * 100:F2}");
+            Console.WriteLine("Por 8 meses e 10 dias");
+            Console.WriteLine($"Valor Futuro: {valorFuturo3:F2}");
+            Console.WriteLine($"Valor de Rendimento: {rendimento3:F2}");
+
+            Console.ReadKey();
         }
     }
 }
