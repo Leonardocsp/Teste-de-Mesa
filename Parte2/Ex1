@@ -8,18 +8,21 @@ namespace TesteDeMesa
         {
             decimal valorPresente, taxa, valorFuturo;
 
-            int mes, ano;
-            
+            int meses, ano;
+
             valorPresente = 1000.00m;
 
             taxa = 5.30m / 100;
 
-            mes = 12;
+            meses = 12;
 
             ano = 2;
 
-            valorFuturo = valorPresente * (decimal)Math.Pow((double)(1 + taxa), mes);
+            valorFuturo = valorPresente * (decimal)Math.Pow((double)(1 + taxa), meses);
 
+            Console.WriteLine($"Valor Presente: {valorPresente:F2}");
+            Console.WriteLine($"Valor da Taxa: {taxa}");
+            Console.WriteLine($"Por {meses} Meses:");
             Console.WriteLine($"Valor Futuro: {valorFuturo:F2}");
 
             Console.ReadKey();
