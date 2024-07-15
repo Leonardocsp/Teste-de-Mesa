@@ -9,13 +9,13 @@ namespace TesteDeMesa
             decimal valorPresenteInvertido, valorFuturo, taxa, ano;
 
             valorFuturo = 7390.61m;
-            taxa = 1.25m / 100; 
+            taxa = 1.25m / 100;
             ano = 2.00m;
 
             valorPresenteInvertido = valorFuturo / (decimal)Math.Pow((double)(1 + taxa), (double)ano);
 
-            Console.WriteLine($"Valor Presente: {valorFuturo:F2}");
-            Console.WriteLine($"Valor Presente: {valorPresenteInvertido:F2}");
+            Console.WriteLine($"Valor Futuro: {valorFuturo:F2}");
+            Console.WriteLine($"Valor Presente Invertido: {valorPresenteInvertido:F2}");
 
             Console.ReadKey();
         }
