@@ -1,6 +1,6 @@
-Using System;
+using System;
 
-namespace TesteDeMesa
+namespace Testes
 {
     internal class Program
     {
@@ -14,30 +14,28 @@ namespace TesteDeMesa
             b = 20;
 
             c = (a + b) / 2;
-           
+
             c = c - 40;
 
-            int[] v = new int [5];
+            int[] v = new int[5];
 
 
-             for(i = 0; i < 5; i++)
+            for (i = 0; i < 5; i++)
             {
                 if (i == 3)
                 {
                     v[i] = a + b + c;
                     Console.WriteLine("Condição: Verdadeira");
-                    Console.WriteLine(v[i]);
+                    Console.WriteLine($"V[3] = {v[i]}");
                 }
 
                 else
                 {
                     Console.WriteLine("Condição: Falsa");
-                    Console.WriteLine(v[i]);
+                    Console.WriteLine($"V[{i}] = {v[i]}");
                 }
             }
-                
             Console.ReadKey();
         }
-
     }
 }
