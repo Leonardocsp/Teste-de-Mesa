@@ -10,9 +10,9 @@ namespace TesteDeMesa
 
             a = 7;
 
-            int[] v = new int[a];
-
             b = a - 6;
+            
+            int[] v = new int[a];
 
             while (b < a)
             {
