@@ -7,23 +7,17 @@ namespace TesteDeMesa
         static void Main(string[] args)
         {
             int a;
-            int[] v = new int[6]; 
+            int[] v = new int[6];
 
             a = 2;
 
-            Console.WriteLine("Valor de a antes: {0}", a); 
-
-        
             while (a < 6)
             {
-                v[a] = 10 * a; 
-                Console.WriteLine("v[{0}] = {1}", a, v[a]); 
+                v[a] = 10 * a;
+                Console.WriteLine("v[{0}] = {1}", a, v[a]);
 
-                a += 1; 
-                Console.WriteLine("Valor de a na posição: {0}", a);
+                a += 1;
             }
-
-            Console.WriteLine("Valor de a final: {0}", a);
 
             Console.ReadKey();
         }
