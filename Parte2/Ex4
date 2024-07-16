@@ -32,7 +32,7 @@ namespace TesteDeMesa
 
                 rendimento = valorFuturo - valorPresente;
 
-                Console.WriteLine($"Mes: {i}");
+                Console.WriteLine($"Mês: {i + 1}");
                 Console.WriteLine($"Saldo: {valorFuturo:F2}");
                 Console.WriteLine($"Valor de Rendimento: {rendimento:F2}");
 
@@ -59,13 +59,13 @@ namespace TesteDeMesa
                             Console.WriteLine($"Novo Saldo: {valorFuturo:F2}");
 
                             meses[i] = valorFuturo;
-                            valorPresente = valorFuturo; 
-                            saqueValido = true; 
+                            valorPresente = valorFuturo;
+                            saqueValido = true;
                         }
                     }
                 }
-            } 
-            
+            }
+
             for (int i = 0; i < 2; i++)
             {
 
@@ -76,11 +76,11 @@ namespace TesteDeMesa
 
                 rendimento = valorFuturo - valorPresente;
 
-                Console.WriteLine($"Mes: {i + 6}");
+                Console.WriteLine($"Mês: {i + 7}");
                 Console.WriteLine($"Saldo: {valorFuturo:F2}");
                 Console.WriteLine($"Valor de Rendimento: {rendimento:F2}");
             }
-                Console.ReadKey();
+            Console.ReadKey();
         }
     }
 }
