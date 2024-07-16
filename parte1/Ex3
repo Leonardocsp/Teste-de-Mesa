@@ -14,17 +14,13 @@ namespace TesteDeMesa
 
             b = a - 6;
 
-            Console.WriteLine("Valor de b antes: {0}", b);
-
             while (b < a)
             {
                 v[b] = b + a;
 
-                Console.WriteLine("v[{0}] = {1}", b, v[b]); 
+                Console.WriteLine("v[{0}] = {1}", b, v[b]);
 
                 b = b + 2;
-
-                Console.WriteLine("Valor de b na posição: {0}", b);
             }
             Console.ReadKey();
         }
