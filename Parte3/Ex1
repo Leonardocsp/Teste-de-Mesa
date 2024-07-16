@@ -25,24 +25,19 @@ namespace TesteDeMesa
             rendimento2 = valorFuturo2 - valorPresente2;
             rendimento3 = valorFuturo3 - valorPresente3;
 
-            Console.WriteLine($"Valor Presente 1: {valorPresente1:F2}");
-            Console.WriteLine($"Valor da Taxa: {taxa1 * 100:F2}");
-            Console.WriteLine("Por 8 meses e 10 dias");
-            Console.WriteLine($"Valor Futuro: {valorFuturo1:F2}");
-            Console.WriteLine($"Valor de Rendimento: {rendimento1:F2}\n");
+            Console.WriteLine(new string('-', 55));
+            Console.WriteLine("|{0, -7} | {1, -7:F2} | {2, -7:F2} | {3, -7:F2} |", "Valor Presente", "Taxa", "Valor Futuro", "Rendimento");
+            Console.WriteLine(new string('-', 55));
 
-            Console.WriteLine($"Valor Presente 2: {valorPresente2:F2}");
-            Console.WriteLine($"Valor da Taxa: {taxa2 * 100:F2}");
-            Console.WriteLine("Por 8 meses e 10 dias");
-            Console.WriteLine($"Valor Futuro: {valorFuturo2:F2}");
-            Console.WriteLine($"Valor de Rendimento: {rendimento2:F2}\n");
+            Console.WriteLine("|{0, -7:F2}        | {1, -7:F2} | {2, -7:F2}      | {3, -7:F2}    |", valorPresente1, taxa1 * 100, valorFuturo1, rendimento1);
+            Console.WriteLine(new string('-', 55));
 
-            Console.WriteLine($"Valor Presente 3: {valorPresente3:F2}");
-            Console.WriteLine($"Valor da Taxa: {taxa3 * 100:F2}");
-            Console.WriteLine("Por 8 meses e 10 dias");
-            Console.WriteLine($"Valor Futuro: {valorFuturo3:F2}");
-            Console.WriteLine($"Valor de Rendimento: {rendimento3:F2}");
+            Console.WriteLine("|{0, -7:F2}        | {1, -7:F2} | {2, -7:F2}      | {3, -7:F2}    |", valorPresente2, taxa2 * 100, valorFuturo2, rendimento2);
+            Console.WriteLine(new string('-', 55));
 
+            Console.WriteLine("|{0, -7:F2}       | {1, -7:F2} | {2, -7:F2}     | {3, -7:F2}    |", valorPresente3, taxa3 * 100, valorFuturo3, rendimento3);
+            Console.WriteLine(new string('-', 55));
+            
             Console.ReadKey();
         }
     }
